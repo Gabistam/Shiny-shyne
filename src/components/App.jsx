@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import Survey from '../pages/Survey'
 import { Routes, Route} from 'react-router-dom';
 import Header from './Header/Header';
+import Error from './Error/Error';
 export default function App() {
   return (
     <div>
@@ -10,7 +11,8 @@ export default function App() {
 
       <Routes>
         <Route exact path="/" element={<Home />} />;
-        <Route path="/survey" element={<Survey />} />;
+        <Route path="/survey/:questionNumber" element={<Survey />} />;
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   )

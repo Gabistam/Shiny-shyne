@@ -1,0 +1,10 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.navlink{
+    margin: 20px;
+    color: blue;
+
+}
